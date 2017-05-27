@@ -6,25 +6,38 @@ void setup() {
   fullScreen(P3D);
   textFont(createFont("Arial", 60));
 }
-boolean angery=false;
+int occuronce=0;
+int [] gridsize={25,50};
+
+int[][] grids= new int[gridsize[0]][gridsize[1]];
 void draw() {
-  float[][] grids= new float[int(width/2)+1][int(height/2)+1]
   fill(255);
+  stroke(0);
   ellipseMode(CENTER);
-  rectMode(CENTER);
+  //rectMode(CENTER);
+  rectMode(CORNER);
   textAlign(CENTER,CENTER);
   background(0);
+  for(int y=0;y<gridsize[1];y++){
+  for(int x=0;x<gridsize[0];x++){
+    
+  if(grids[x][y]==1){
+  fill(0);
+  }else{
+  fill(255);
+  }  
+  rect(x*width/gridsize[0],y*height/gridsize[1],width/gridsize[0],height/gridsize[1]);
   
-  if(angery){
-    color+=50;
-    background(255);
-    fill(0);
-    rect(mouseX,mouseY,width/2,width/2);
-  }
+  }}
+  
 }
-void mousePressed() {
-  angery=true;
+void mouseDragged() {
+  for(int y=0;y<gridsize[1];y++){
+  for(int x=0;x<gridsize[0];x++){
+  if(mouseX>=x*width/gridsize[0]&&mouseX<(x+1)*width/gridsize[0]&&mouseY>=y*height/gridsize[1]&&mouseY<(y+1)*height/gridsize[1]){
+  grids[x][y]=1;
+  }
+  }}
 }
 void mouseReleased() {
-  angery=false;
 }
