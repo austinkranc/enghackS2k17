@@ -16,5 +16,11 @@ Then spam the keyboard to run the boot command `run do_ota`
 -run configuration_edison --wifi first. No need to connect to a wifi network, however, this step properly setups the wifi direct
 
 -run steps from Chapter 6.3 and Chapter 6.9
+1. systemctl status wpa_supplicant
+1. systemctl start wpa_supplicant
+1. wpa_cli -iwlan0 interface
+1. wpa_cli -ip2p-dev-wlan0 p2p_find
+1. wpa_cli -ip2p-dev-wlan0 p2p_peers .... grab the MAC code given
+1. wpa_cli -ip2p-dev-wlan0 p2p_connect (MAC CODE) pbc persistent go_intent=0
 
 **Data transfer to phone**
