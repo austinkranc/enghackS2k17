@@ -17,7 +17,7 @@ Then spam the keyboard to run the boot command `run do_ota`
 
 -if you cannot login, don't bother with the devices given. Resetting the password requires an image that is actually too large for the device
 
--run `configuration_edison --wifi` first. No need to connect to a wifi network, however, this step properly setups the wifi direct
+-run `configure_edison --wifi` first. No need to connect to a wifi network, however, this step properly setups the wifi direct
 
 -run steps from Chapter 6.3 and Chapter 6.9
 1. systemctl status wpa_supplicant
