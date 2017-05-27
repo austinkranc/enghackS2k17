@@ -10,6 +10,8 @@ http://www.instructables.com/id/Factory-Reset-your-Intel-EdisonTroubleshooting-C
 
 -Need both USB cables connected + SideSwitch in down position. If the device is off, it isn't working.
 
+-PuTTy Terminal: Serial=COM6 Spee=115200
+
 -For reboot, press and hold the power button for 10 seconds. When lights are off, press again for 5 seconds or until a light flashes.
 Then spam the keyboard to run the boot command `run do_ota`
 
