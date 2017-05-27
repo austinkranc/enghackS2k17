@@ -1,12 +1,12 @@
-## EdisonWiFiSetup ##
+# EdisonWiFiSetup #
 
-*Links:* http://download.intel.com/support/edison/sb/edison_wifi_331438001.pdf (Chapter 6.3 + 6.9)
+**Links:** http://download.intel.com/support/edison/sb/edison_wifi_331438001.pdf (Chapter 6.3 + 6.9)
 
 http://www.instructables.com/id/Factory-Reset-your-Intel-EdisonTroubleshooting-Con/ (if nothing is making sense)
 
-# Notes: #
+### Notes: ###
 
-*WiFiSetup*
+**WiFiSetup**
 
 -Need both USB cables connected + SideSwitch in down position
 
@@ -17,4 +17,4 @@ Then spam the keyboard to run the boot command `run do_ota`
 
 -run steps from Chapter 6.3 and Chapter 6.9
 
-*Data transfer to phone*
+**Data transfer to phone**
